@@ -1,0 +1,25 @@
+.Link1
+{
+    text-decoration: none;
+    color: gray;
+    font-size: 13px;
+   margin: 10px;
+}
+.p1img
+{
+    width: 900px;
+    
+}
+.boldtag
+{
+    color: gray;
+    font-size: 12px;
+    font-weight: bold;
+}
+.tag1
+{
+    border: none;
+    margin: 5px;
+    font-size: 13px;
+    width: min-content;
+}
