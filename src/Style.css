@@ -1,25 +1,123 @@
-.Link1
-{
+.Link1 {
     text-decoration: none;
     color: gray;
     font-size: 13px;
-   margin: 10px;
+    margin: 10px;
 }
-.p1img
-{
-    width: 900px;
-    
-}
-.boldtag
-{
-    color: gray;
-    font-size: 12px;
+
+.boldtag {
     font-weight: bold;
-}
-.tag1
-{
-    border: none;
-    margin: 5px;
     font-size: 13px;
-    width: min-content;
+    color: gray;
+    margin: 6px;
+    font-family: sans-serif;
+}
+.tag1 {
+    width: fit-content;
+    border: none;
+    font-family: sans-serif;
+    font-size: 13px;
+}
+.p1img {
+    width: 100%;
+    height: auto;
+}
+.cardDiv {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 30px;
+    padding: 0;
+}
+
+
+.cardDiv2 {
+    margin: 0;
+    padding: 0;
+}
+
+
+.customCard {
+    background-color: #fff;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    margin: 0;
+    padding: 0;
+}
+
+
+.customCard * {
+    margin: 0;
+    padding: 0;
+}
+
+
+.image-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+
+.imagecard {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+.rate {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: whitesmoke;
+    color: black;
+    padding: 3px 8px;
+    font-size: 11px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+
+.desp {
+    font-weight: 600;
+    font-size: 13px;
+    padding: 10px 10px 0 10px;
+    font-family: sans-serif;
+    text-transform: capitalize;
+}
+
+.titleP {
+    font-weight: 600;
+    font-size: 11px;
+    padding: 10px 10px 0 10px;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    color: gray;
+}
+
+.finalP {
+    background-color: rgb(245, 239, 239);
+    width: fit-content;
+    padding: 3px 10px;
+    font-size: 12px;
+}
+
+.tagCard {
+    border: 1px solid lightgray;
+    width: fit-content;
+    font-size: 10px;
+    color: gray;
+    font-weight: 600;
+    padding: 5px 10px;
+    margin: 10px;
+}
+.filterTag
+{
+    margin-top: 45px;
+    top: 50px;
 }
