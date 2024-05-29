@@ -14,7 +14,7 @@
         "title": "Men's Blue Balance Graphic Printed T-shirt",
         "image": "https://images.bewakoof.com/t640/men-s-blue-balance-graphic-printed-t-shirt-637101-1715593166-1.jpg",
         "description": "Bewakoof Air 1.0",
-        "price": "₹549",
+        "   ": "₹549",
         "finalPrice": "₹509",
         "rating": 4.5
     },
@@ -103,7 +103,7 @@
         "id": 12,
         "title": "Men's Brown Geto Graphic Printed T-shirt",
         "image": "https://images.bewakoof.com/t640/men-s-brown-geto-graphic-printed-t-shirt-630791-1706687501-1.jpg",
-        "description": "Bewakoof",
+        "description": "Olivi",
         "price": "₹599",
         "finalPrice": "₹549",
         "rating": 4.4
@@ -130,7 +130,7 @@
         "id": 15,
         "title": "Men's White T-shirt",
         "image": "https://images.bewakoof.com/t640/men-s-white-t-shirt-633527-1714978263-1.jpg",
-        "description": "Bewakoof",
+        "description": "Olivi",
         "price": "₹899",
         "finalPrice": "₹829",
         "rating": null
