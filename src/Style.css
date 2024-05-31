@@ -168,3 +168,14 @@
     font-weight: 600;
     margin-bottom: 20px;
 }
+.LinkType
+{
+    text-decoration: none;
+}
+.desimg1 img
+{
+    margin-top: 20px;   
+    border: 2px solid turquoise;
+    object-fit: cover;
+   
+}

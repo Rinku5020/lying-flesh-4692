@@ -12,7 +12,7 @@ function Product() {
     const [sort, setSort] = useState(null)
     const [filter, setFilter] = useState(null)
     const [page, setPage] = useState(1)
-    const [Pagelimit,setPageLimit]=useState(1)
+    const [Pagelimit, setPageLimit] = useState(1)
     console.log(sort)
     const fetch = () => {
         axios.get("http://localhost:8080/ProductData",
@@ -22,20 +22,20 @@ function Product() {
                     _sort: "price",
                     _order: sort,
                     description: filter,
-                    _limit:"6",
-                    _page:page
+                    _limit: "6",
+                    _page: page
                 }
             })
-            .then((res) =>{
+            .then((res) => {
                 setPageLimit(res.headers["x-total-count"])
                 setData(res.data)
-                
-            } )
+
+            })
             .catch((err) => console.log(err))
     }
     useEffect(() => {
         fetch()
-    }, [sort, filter,page])
+    }, [sort, filter, page])
 
     const handleFilterChange = (filterValue) => {
         setFilter(filterValue);
@@ -169,29 +169,33 @@ function Product() {
                         <div className="container mt-5">
                             <div className="row">
                                 {data.map((el) => (
-                                    <div className="col-lg-4 col-md-6 col-sm-12 mb-4" key={el.id}>
-                                        <div className="card h-100 border-0 shadow-sm">
-                                            <div className="position-relative">
-                                                <img src={el.image} className="card-img-top imgCard" alt={el.title} />
-                                                <div className="rate position-absolute bottom-0 end-0 bg-light text-dark p-1 m-2 rounded">
-                                                    ⭐ {el.rating}
+
+                                    <div className="col-lg-4 col-md-6 col-sm-12 mb-4" key={el.id} >
+                                        <Link className='LinkType' to={`/description/${el.id}`} >
+                                            <div className="card h-100 border-0 shadow-sm">
+                                                <div className="position-relative">
+                                                    <img src={el.image} className="card-img-top imgCard" alt={el.title} />
+                                                    <div className="rate position-absolute bottom-0 end-0 bg-light text-dark p-1 m-2 rounded">
+                                                        ⭐ {el.rating}
+                                                    </div>
+                                                </div>
+                                                <div className="card-body">
+                                                    <p className="desp font-weight-bold text-capitalize">{el.description}</p>
+                                                    <p className="titleP text-muted text-capitalize">{el.title}</p>
+                                                    <h5 className="card-title">{el.price}</h5>
+                                                    <h6 className="finalP bg-light p-2 d-inline-block">{el.finalPrice} For TriBe Members</h6>
+                                                    <p className="tagCard border bg-light text-muted p-2 d-inline-block mt-2">100 % COTTON</p>
                                                 </div>
                                             </div>
-                                            <div className="card-body">
-                                                <p className="desp font-weight-bold text-capitalize">{el.description}</p>
-                                                <p className="titleP text-muted text-capitalize">{el.title}</p>
-                                                <h5 className="card-title">{el.price}</h5>
-                                                <h6 className="finalP bg-light p-2 d-inline-block">{el.finalPrice} For TriBe Members</h6>
-                                                <p className="tagCard border bg-light text-muted p-2 d-inline-block mt-2">100 % COTTON</p>
-                                            </div>
-                                        </div>
+                                        </Link>
                                     </div>
+
                                 ))}
                             </div>
                             <div className='d-flex justify-content-between'>
-                            <button  className='btnPng' disabled={page == 1} onClick={() => setPage(page - 1)}>Pre</button>
-                            <button className='btnPng' disabled>{page}</button>
-                            <button className='btnPng' disabled={page == Math.ceil(Pagelimit/6)} onClick={() => setPage(page + 1)}>Next</button>
+                                <button className='btnPng' disabled={page == 1} onClick={() => setPage(page - 1)}>Pre</button>
+                                <button className='btnPng' disabled>{page}</button>
+                                <button className='btnPng' disabled={page == Math.ceil(Pagelimit / 6)} onClick={() => setPage(page + 1)}>Next</button>
                             </div>
                         </div>
                     </Col>
