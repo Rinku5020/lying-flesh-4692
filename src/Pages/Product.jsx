@@ -47,7 +47,7 @@ function Product() {
 
 
     return (
-        <div>
+        <div className='font-face-gm'>
             <Container>
                 <Row className="justify-content-md-center">
                     <Col>

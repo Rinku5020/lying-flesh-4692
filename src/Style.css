@@ -179,3 +179,112 @@
     object-fit: cover;
    
 }
+.desAll h1
+{
+    font-size: 25px;
+    color: #4f5362;
+}
+.desAll h2
+{
+    font-size: 18px;
+    color: #737373;
+    font-weight: 400;
+}
+.desAll .ratedes
+{
+    border: 1px solid ;
+    width: fit-content;
+    font-weight: 600;
+    color: #4f5362;
+    padding: 1px 6px;
+    background-color:#fff;
+    border-radius: 3px;
+    font-size: 15px;
+}
+.desAll h3
+{
+    font-size: 23px;
+}
+.cutPrice
+{
+    font-weight: 400;
+    font-size: 16px;
+    color: #737373;
+    margin: 5px;
+}
+.off
+{
+    color: #00b852;
+    font-size: 18px;
+}
+.taxs
+{
+    color: #737373;
+    font-size: 13px;
+}
+.offer
+{
+    background-color: #00b852;
+    color: #fff;
+    font-weight: 600;
+    padding: 1px 10px;
+    font-size: 14px;
+}
+.desbr
+{
+    border: 1px solid #737373;
+    font-size: 14px;
+    padding: 2px 8px;
+    font-weight: 600;
+    color: #737373;
+    
+}
+@font-face {
+    font-family: "Poppins", sans-serif;
+    src: url(../public/GoogleFonts/Poppins-Thin.ttf);
+}
+.font-face-gm
+{
+    font-family:"Poppins", sans-serif ;
+}
+.hrBold
+{
+    border: 1px solid;
+    color: #837e7ef1;
+}
+.desTag
+{
+    font-size: 12px;
+    text-transform: capitalize;
+    color: #737373;
+}
+.Add
+{
+    padding: 8px 30px;
+    background-color: #ffd84d;
+    border: none;
+    margin: 5px;
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: 4px;
+}
+.WishList
+{
+    padding: 8px 30px;
+    background-color: whitesmoke;
+    border: none;
+    margin: 5px;
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: 4px;
+}
+.location
+{
+    font-size: 11px;
+    font-weight: 800;
+}
+.locaP
+{
+    font-size: 13px;
+    color: #737373;
+}
